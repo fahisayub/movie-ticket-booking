@@ -8,7 +8,7 @@ let create=tag=>{
 }
 let getmovies=async()=>{
     let query=document.getElementById('search').value ;
-    const url=`http://www.omdbapi.com/?s=${query}&i=tt3896198&apikey=e5a80741`;
+    const url=`https://www.omdbapi.com/?s=${query}&i=tt3896198&apikey=e5a80741`;
     try{
         let res= await fetch(url);
         let data = await res.json();
